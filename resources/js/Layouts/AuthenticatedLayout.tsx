@@ -22,7 +22,7 @@ export default function Authenticated({
             <SidebarProvider>
             <AppSidebar />
                 <main>
-                    <SidebarTrigger />
+                    {/* <SidebarTrigger /> */}
                     {children}
                 </main>
             </SidebarProvider>

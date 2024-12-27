@@ -2,18 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Record;
 use Illuminate\Http\Request;
+use App\Models\Account;
 use Inertia\Inertia;
 
-class RecordController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return Inertia::render('Records');
+        $accounts = Account::all();
+
+        return Inertia::render('Dashboard', [
+            'accounts' => $accounts,
+        ]);
     }
 
     /**
@@ -35,7 +39,7 @@ class RecordController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Record $record)
+    public function show(string $id)
     {
         //
     }
@@ -43,7 +47,7 @@ class RecordController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Record $record)
+    public function edit(string $id)
     {
         //
     }
@@ -51,7 +55,7 @@ class RecordController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Record $record)
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -59,7 +63,7 @@ class RecordController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Record $record)
+    public function destroy(string $id)
     {
         //
     }

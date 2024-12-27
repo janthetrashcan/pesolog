@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f8fad98d414b6e76b3cad63a981e25e",
+    "content-hash": "7331cbb524f060295b8dbd740bbf89c7",
     "packages": [
         {
             "name": "brick/math",
@@ -6255,6 +6255,63 @@
             "time": "2024-12-14T21:21:42+00:00"
         },
         {
+            "name": "laravel/helpers",
+            "version": "v1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/helpers.git",
+                "reference": "f28907033d7edf8a0525cfb781ab30ce6d531c35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/helpers/zipball/f28907033d7edf8a0525cfb781ab30ce6d531c35",
+                "reference": "f28907033d7edf8a0525cfb781ab30ce6d531c35",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+                "php": "^7.2.0|^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "email": "dries@laravel.com"
+                }
+            ],
+            "description": "Provides backwards compatibility for helpers in the latest Laravel release.",
+            "keywords": [
+                "helpers",
+                "laravel"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/helpers/tree/v1.7.1"
+            },
+            "time": "2024-11-26T14:56:25+00:00"
+        },
+        {
             "name": "laravel/pail",
             "version": "v1.2.1",
             "source": {
@@ -7242,6 +7299,83 @@
                 }
             ],
             "time": "2024-12-21T05:51:08+00:00"
+        },
+        {
+            "name": "scrumble-nl/laravel-model-ts-type",
+            "version": "10.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scrumble-nl/laravel-model-ts-type.git",
+                "reference": "a0010fcc8c8584f90d13eff68cde7e17428840b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scrumble-nl/laravel-model-ts-type/zipball/a0010fcc8c8584f90d13eff68cde7e17428840b7",
+                "reference": "a0010fcc8c8584f90d13eff68cde7e17428840b7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "laravel/framework": "^10.0|^11.0",
+                "laravel/helpers": "^1.6",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "nunomaduro/larastan": "^2.4",
+                "orchestra/testbench": "^8.0|^9.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "FormatNamespace": "Scrumble\\TypeGenerator\\Facades\\FormatNamespace"
+                    },
+                    "providers": [
+                        "Scrumble\\TypeGenerator\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "Scrumble\\TypeGenerator\\": "src/"
+                },
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rico Clark",
+                    "email": "rico@scrumble.nl"
+                },
+                {
+                    "name": "Luuk de Weijer",
+                    "email": "luuk@scrumble.nl"
+                }
+            ],
+            "description": "This package makes it possible to generate TypeScript types based on your models",
+            "homepage": "https://github.com/scrumble-nl/laravel-model-ts-type",
+            "keywords": [
+                "command",
+                "generate",
+                "model",
+                "type",
+                "typescript"
+            ],
+            "support": {
+                "issues": "https://github.com/scrumble-nl/laravel-model-ts-type/issues",
+                "source": "https://github.com/scrumble-nl/laravel-model-ts-type/tree/10.4.0"
+            },
+            "time": "2024-06-25T09:30:26+00:00"
         },
         {
             "name": "sebastian/cli-parser",
