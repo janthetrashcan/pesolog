@@ -13,7 +13,7 @@ export interface Account {
     balance: number;
     currency: string;
     color: string;
-    account_type: string;
+    account_type_id: number;
     user_id: number;
 }
 

@@ -22,31 +22,16 @@ class AccountTypeSeeder extends Seeder
                 'name' => 'Cash'
             ],
             [
-                'name' => 'Coin Bank'
-            ],
-            [
-                'name' => 'Current Account'
-            ],
-            [
                 'name' => 'Credit Card'
             ],
             [
                 'name' => 'Savings Account'
             ],
             [
-                'name' => 'Bonus'
-            ],
-            [
                 'name' => 'Insurance'
             ],
             [
-                'name' => 'Investment'
-            ],
-            [
                 'name' => 'Loan'
-            ],
-            [
-                'name' => 'Mortgage'
             ],
         ];
 

@@ -13,16 +13,42 @@ class AccountSeeder extends Seeder
      */
     public function run(): void
     {
-        Account::create([
-            'name' => 'Wallet',
-            'account_number' => null,
-            'initial_balance' => 0,
-            'balance' => 0,
-            'currency' => 'PHP',
-            'color' => 'green-500',
-            'account_type_id' => 1,
+        $accounts = [
+            [
+                'name' => 'Wallet',
+                'account_number' => null,
+                'initial_balance' => 0,
+                'balance' => 0,
+                'currency' => 'PHP',
+                'color' => 'green-500',
+                'account_type_id' => 1,
+                'user_id' => 1,
+            ],
+            [
+                'name' => 'Maya',
+                'account_number' => null,
+                'initial_balance' => 500,
+                'balance' => 500,
+                'currency' => 'PHP',
+                'color' => 'green-500',
+                'account_type_id' => 1,
+                'user_id' => 1,
+            ],
+            [
+                'name' => 'GCash',
+                'account_number' => null,
+                'initial_balance' => 500,
+                'balance' => 500,
+                'currency' => 'PHP',
+                'color' => 'blue-500',
+                'account_type_id' => 1,
+                'user_id' => 1,
+            ],
 
-            'user_id' => 1,
-        ]);
+        ];
+
+        foreach($accounts as $account) {
+            Account::create($account);
+        }
     }
 }
